@@ -54,12 +54,9 @@ export default {
   mounted() {
     setInterval(() => {
       this.fetch();
-    }, 5000);
+    }, 6000);
   },
 };
 </script>
 
-<style>
-#main {
-}
-</style>
+<style></style>
