@@ -1,8 +1,9 @@
 <template>
-  <div id="main">
-    <p>『{{ data.message }}』</p>
-    <p>
-      --{{ data.from }}<span v-if="data.from_who">「{{ data.from_who }}」</span>
+  <div id="main" @click="fetch">
+    <p id="msg">『{{ data.message }}』</p>
+    <p id="from">
+      --{{ data.from
+      }}<span v-show="data.from_who">「{{ data.from_who }}」</span>
     </p>
   </div>
 </template>
@@ -51,12 +52,45 @@ export default {
         });
     },
   },
-  mounted() {
-    setInterval(() => {
+  // mounted() {
+  //   setInterval(() => {
+  //     this.fetch();
+  //   }, 6000);
+  // },
+  watch: {
+    $route() {
       this.fetch();
-    }, 6000);
+    },
   },
 };
 </script>
 
-<style></style>
+<style>
+#main:hover {
+  animation: 0.5s large linear forwards;
+}
+@keyframes large {
+  from {
+    font-size: 1rem;
+  }
+  to {
+    font-size: 1.5rem;
+  }
+}
+#main {
+  border: 10px solid;
+  border-image: linear-gradient(45deg, gold, deeppink) 1;
+  clip-path: inset(0px round 10px);
+  animation: huerotate 6s infinite linear;
+  filter: hue-rotate(360deg);
+}
+
+@keyframes huerotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rorate(360deg);
+  }
+}
+</style>

@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <h1>来一点句子🍊吧</h1>
+    <div>点击句子🍊切换</div>
     <div id="nav">
       <router-link to="/dh">动画</router-link> |
       <router-link to="/mh">漫画</router-link> |
