@@ -34,7 +34,10 @@ export default {
   created() {
     axios
       .get(
-        "http://49.235.221.66:3000/login/cellphone?phone=19850353002&password=@wxd0213&timestamp=1503019930000"
+        "http://49.235.221.66:3000/login/cellphone?phone=19850353002&password=@wxd0213",
+        {
+          withCredentials: true,
+        }
       )
       .then((response) => {
         this.profile.cookie = response.data.cookie;
