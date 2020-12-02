@@ -8,10 +8,10 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@moefe/vue-aplayer": "^2.0.0-beta.5",
     "axios": "^0.21.0",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
-    "vue-aplayer": "^1.6.1",
     "vue-axios": "^3.2.0",
     "vue-router": "^3.2.0"
   },
@@ -21,8 +21,11 @@
     "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",
+    "cplayer": "^3.2.2",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "vue-aplayer": "^1.6.1",
+    "vue-cplayer": "^0.1.0",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {

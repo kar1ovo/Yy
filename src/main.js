@@ -7,7 +7,9 @@ import router from "./router";
 
 Vue.config.productionTip = false;
 
-Vue.use(VueAxios, axios);
+import APlayer from "@moefe/vue-aplayer";
+
+Vue.use(APlayer, VueAxios, axios);
 
 new Vue({
   router,

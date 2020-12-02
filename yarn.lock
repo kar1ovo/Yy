@@ -889,6 +889,13 @@
     cssnano-preset-default "^4.0.0"
     postcss "^7.0.0"
 
+"@moefe/vue-aplayer@^2.0.0-beta.5":
+  version "2.0.0-beta.5"
+  resolved "https://registry.npm.taobao.org/@moefe/vue-aplayer/download/@moefe/vue-aplayer-2.0.0-beta.5.tgz#f6bbd1802562e8e30ef9106192008a90bed2a354"
+  integrity sha1-9rvRgCVi6OMO+RBhkgCKkL7So1Q=
+  dependencies:
+    vue "^2.5.17"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.npm.taobao.org/@mrmlnc/readdir-enhanced/download/@mrmlnc/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -2695,6 +2702,11 @@ cosmiconfig@^5.0.0:
     is-directory "^0.3.1"
     js-yaml "^3.13.1"
     parse-json "^4.0.0"
+
+cplayer@^3.1.6, cplayer@^3.2.2:
+  version "3.2.2"
+  resolved "https://registry.npm.taobao.org/cplayer/download/cplayer-3.2.2.tgz#7fa9364758f12df16bb309362ccbbdd02a84da0d"
+  integrity sha1-f6k2R1jxLfFrswk2LMu90CqE2g0=
 
 create-ecdh@^4.0.0:
   version "4.0.4"
@@ -8098,6 +8110,13 @@ vue-axios@^3.2.0:
   resolved "https://registry.npm.taobao.org/vue-axios/download/vue-axios-3.2.0.tgz#43843cbc9108e807007189ad80cd1ba48a0ad951"
   integrity sha1-Q4Q8vJEI6AcAcYmtgM0bpIoK2VE=
 
+vue-cplayer@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.npm.taobao.org/vue-cplayer/download/vue-cplayer-0.1.0.tgz#861ad0c75fd4c41ebf5d73e22b36331114f9da6a"
+  integrity sha1-hhrQx1/UxB6/XXPiKzYzERT52mo=
+  dependencies:
+    cplayer "^3.1.6"
+
 vue-eslint-parser@^7.0.0:
   version "7.1.1"
   resolved "https://registry.npm.taobao.org/vue-eslint-parser/download/vue-eslint-parser-7.1.1.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue-eslint-parser%2Fdownload%2Fvue-eslint-parser-7.1.1.tgz#c43c1c715ff50778b9a7e9a4e16921185f3425d3"
@@ -8161,7 +8180,7 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.npm.taobao.org/vue-template-es2015-compiler/download/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha1-HuO8mhbsv1EYvjNLsV+cRvgvWCU=
 
-vue@^2.6.11:
+vue@^2.5.17, vue@^2.6.11:
   version "2.6.12"
   resolved "https://registry.npm.taobao.org/vue/download/vue-2.6.12.tgz?cache=0&sync_timestamp=1606321342394&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue%2Fdownload%2Fvue-2.6.12.tgz#f5ebd4fa6bd2869403e29a896aed4904456c9123"
   integrity sha1-9evU+mvShpQD4pqJau1JBEVskSM=

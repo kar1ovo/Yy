@@ -34,18 +34,18 @@ export default {
   created() {
     this.fetch();
   },
-  data: function () {
+  data: function() {
     return {
       data,
     };
   },
   methods: {
-    fetch: function () {
+    fetch: function() {
       const ref = this.$route.params.type;
       const type = data.goTo[ref];
       Vue.axios
         .get(`https://v1.hitokoto.cn/?c=${type}&encode=json`)
-        .then(function (response) {
+        .then(function(response) {
           data.message = response.data.hitokoto;
           data.from = response.data.from;
           data.from_who = response.data.from_who;
