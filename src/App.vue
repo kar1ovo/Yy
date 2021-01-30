@@ -34,7 +34,7 @@ export default {
   created() {
     axios
       .get(
-        "http://49.235.221.66:3000/login/cellphone?phone=19850353002&password=@wxd0213",
+        "https://bird.ioliu.cn/v1?url=http://49.235.221.66:3000/login/cellphone?phone=19850353002&password=@wxd0213",
         {
           withCredentials: true,
         }
@@ -48,7 +48,7 @@ export default {
     fetchDailyMusics() {
       axios
         .get(
-          `http://49.235.221.66:3000/recommend/songs?cookie=${this.profile.cookie}`
+          `https://bird.ioliu.cn/v1?url=http://49.235.221.66:3000/recommend/songs?cookie=${this.profile.cookie}`
         )
         .then((response) => {
           let mdata = response.data.data.dailySongs;
@@ -65,13 +65,13 @@ export default {
             music.cover = mdata[i].al.picUrl;
             axios
               .get(
-                `http://49.235.221.66:3000/song/url?id=${mdata[i].id}&timestamp=1503019930006`
+                `https://bird.ioliu.cn/v1?url=http://49.235.221.66:3000/song/url?id=${mdata[i].id}&timestamp=1503019930006`
               )
               .then((response) => {
                 music.url = response.data.data[0].url;
                 axios
                   .get(
-                    `http://49.235.221.66:3000/lyric?id=${mdata[i].id}&timestamp=1503019930007`
+                    `https://bird.ioliu.cn/v1?url=http://49.235.221.66:3000/lyric?id=${mdata[i].id}&timestamp=1503019930007`
                   )
                   .then((response) => {
                     music.lrc = response.data.lrc
